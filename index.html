@@ -1848,7 +1848,7 @@
             let isCallbackCalled = false;
             let isLoadingComplete = false;
             const startTime = Date.now();
-            const MIN_LOAD_TIME = 2000; // Уменьшил до 2 секунд для теста
+            const MIN_LOAD_TIME = 0; // Уменьшил до 2 секунд для теста
 
             function checkComplete() {
                 if (isCallbackCalled) return;
@@ -1940,7 +1940,7 @@
                 if (!isCallbackCalled) {
                     showInternetError();
                 }
-            }, 4000);
+            }, 2000);
 
             // ДОПОЛНИТЕЛЬНО: если через 5 секунд ничего не загрузилось,
             // возможно проблема с путями — показываем ошибку
